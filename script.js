@@ -8,10 +8,12 @@
 // console.log(fetchWeatherData());
 
 const weatherForm = document.querySelector("#inputSection form");
+const cityList = document.querySelector("#weatherSection ul");
 
 weatherForm.addEventListener("submit", extractWeather);
 
 function extractWeather(e) {
     e.preventDefault();
     console.log(e.target[0].value);
+    e.target[0].value = "";
 }
