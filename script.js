@@ -7,3 +7,6 @@
 
 // console.log(fetchWeatherData());
 
+const x = require("./script2");
+
+console.log("hello world");
