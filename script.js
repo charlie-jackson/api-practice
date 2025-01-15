@@ -8,7 +8,7 @@
 // console.log(fetchWeatherData());
 
 const weatherForm = document.querySelector("#inputSection form");
-const cityList = document.querySelector("#weatherSection ul");
+const cityList = document.querySelector("#citySection ul");
 
 weatherForm.addEventListener("submit", extractWeather);
 
@@ -16,4 +16,10 @@ function extractWeather(e) {
     e.preventDefault();
     console.log(e.target[0].value);
     e.target[0].value = "";
+}
+
+function addCity(city) {
+    const li = document.createElement("li");
+    li.textContent = city;
+    cityList.appendChild(li);
 }
