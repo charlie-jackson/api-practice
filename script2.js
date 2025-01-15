@@ -1,7 +1,3 @@
 const x = 42;
 
-
-
-
-
-modules.export = x;
+module.exports = x;
